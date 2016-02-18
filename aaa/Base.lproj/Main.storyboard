@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10102" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10080"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="aaa" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="hgn-Hs-kaZ">
+                                <rect key="frame" x="-335" y="106" width="873" height="590"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwF-p8-eae">
+                                <rect key="frame" x="140" y="319" width="95" height="30"/>
+                                <state key="normal" title="Make me cool"/>
+                                <connections>
+                                    <action selector="makemenotsouncool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uU0-Hp-8Fc"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RedBomb" translatesAutoresizingMaskIntoConstraints="NO" id="C79-aY-sTX">
+                                <rect key="frame" x="48" y="28" width="123" height="83"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlueBomb" translatesAutoresizingMaskIntoConstraints="NO" id="rDx-ub-s9L">
+                                <rect key="frame" x="207" y="25" width="128" height="86"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xeQ-2s-Gg2">
+                                <rect key="frame" x="139" y="368" width="96" height="30"/>
+                                <state key="normal" title="Make me blue"/>
+                                <connections>
+                                    <action selector="makeme12:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JDM-v8-Mxw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="coolbg" destination="hgn-Hs-kaZ" id="W9d-Kn-bRv"/>
+                        <outlet property="coollogo" destination="C79-aY-sTX" id="yNt-3q-hy9"/>
+                        <outlet property="coollogo2" destination="rDx-ub-s9L" id="BKs-cg-auM"/>
+                        <outlet property="uncoolbt" destination="lwF-p8-eae" id="Zy5-Wd-JzJ"/>
+                        <outlet property="uncoolbt1" destination="xeQ-2s-Gg2" id="7Es-Dj-nEV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="441.5" y="533.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BlueBomb" width="530" height="96"/>
+        <image name="RedBomb" width="473" height="96"/>
+        <image name="bg" width="1667" height="1667"/>
+    </resources>
+</document>
